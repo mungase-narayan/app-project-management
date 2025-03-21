@@ -1,5 +1,8 @@
-import { LogoLink, AuthButtons, NavLinks, ModeToggle } from "@/components";
-import { NAV_LINKS } from "@/constants";
+// import { ModeToggle } from "@/components";
+import NavLinks from "./nav-links"
+import AuthButtons from "../shared/auth-buttons";
+import LogoLink from "../../components/shared/logo-link";
+import { NAV_LINKS } from "../../constants/nav-links";
 import UserAvatar from "./user-avatar";
 import MobileHeader from "./mobile-header";
 
@@ -16,7 +19,7 @@ const SiteHeader = () => {
           <div className="hidden md:block">
             <UserAvatar />
           </div>
-          <ModeToggle />
+          {/* <ModeToggle /> */}
           <MobileHeader />
         </div>
       </div>
