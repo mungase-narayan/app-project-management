@@ -5,7 +5,7 @@ import {
   Command,
   Inbox,
   MessageCircleQuestion,
-  Search,
+  Proportions,
   Settings2,
   Sparkles,
 } from "lucide-react";
@@ -31,23 +31,22 @@ const dashboardLinks = {
   navMain: [
     {
       id: 1,
-      title: "Search",
-      url: "/dashboard/search",
-      icon: Search,
+      title: "Projects",
+      url: "/dashboard/projects",
+      icon: Proportions,
     },
     {
       id: 2,
-      title: "Ask AI",
-      url: "/dashboard/ask-ai",
-      icon: Sparkles,
-    },
-
-    {
-      id: 3,
       title: "Inbox",
       url: "/dashboard/inbox",
       icon: Inbox,
       badge: "10",
+    },
+    {
+      id: 3,
+      title: "Ask AI",
+      url: "/dashboard/ask-ai",
+      icon: Sparkles,
     },
   ],
   navSecondary: [
