@@ -1,5 +1,6 @@
 // import { ModeToggle } from "@/components";
-import NavLinks from "./nav-links"
+import { NavLink } from "react-router-dom";
+import NavLinks from "./nav-links";
 import AuthButtons from "../shared/auth-buttons";
 import LogoLink from "../../components/shared/logo-link";
 import { NAV_LINKS } from "../../constants/nav-links";
@@ -13,7 +14,9 @@ const SiteHeader = () => {
         <div className="flex items-center justify-center space-x-4 sm:space-x-8">
           <LogoLink />
           <NavLinks links={NAV_LINKS} />
+          <NavLink to={"/dashboard"}>Dashboard</NavLink>
         </div>
+
         <div className="flex items-center justify-center space-x-2">
           <AuthButtons />
           <div className="hidden md:block">
