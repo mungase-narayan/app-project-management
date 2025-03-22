@@ -9,7 +9,6 @@ import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import DesktopDashboardSidebar from "@/components/shared/dashboard/desktop-dashboard-sidebar";
 
-
 const DashboardLayout = () => {
   return (
     <SidebarProvider>
@@ -23,7 +22,10 @@ const DashboardLayout = () => {
 
           <div className="flex items-center px-6">
             <Avatar className="bg-black/40">
-              <AvatarImage src="/Narayan-removebg-preview.png" alt="@shadcn" />
+              <AvatarImage
+                src="/images/Narayan-removebg-preview.png"
+                alt="@shadcn"
+              />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
