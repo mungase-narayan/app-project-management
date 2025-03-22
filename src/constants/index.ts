@@ -1,4 +1,19 @@
 import { Zap, Shield, Users, Star, Clock, Cloud, Lock } from "lucide-react";
+
+import { MemberRole, InvitationStatus } from "@/types";
+
+export const MEMBER_ROLE_COLORS = {
+  [MemberRole.OWNER]: "text-orange-500 bg-orange-100",
+  [MemberRole.ADMIN]: "text-red-500 bg-red-100",
+  [MemberRole.MEMBER]: "text-blue-500 bg-blue-100",
+};
+
+export const INVITATION_STATUS_COLORS = {
+  [InvitationStatus.ACCEPTED]: "text-green-500 bg-green-100",
+  [InvitationStatus.PENDING]: "text-orange-500 bg-orange-100",
+  [InvitationStatus.REJECTED]: "text-red-500 bg-red-100",
+};
+
 const PricingFeatures = {
   basic: [
     { icon: Users, text: "Up to 5 team members" },
@@ -93,4 +108,12 @@ const FAQ = [
   },
 ];
 
-export { FAQ, PricingPlans };
+const TaskStatus = [
+  "TODO",
+  "IN_PROGRESS",
+  "UNDER_REVIEW",
+  "COMPLETED",
+  "ARCHIVED",
+];
+
+export { FAQ, PricingPlans, TaskStatus };
