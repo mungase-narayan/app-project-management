@@ -32,8 +32,13 @@ export function NavMain({
           )
         }
       >
-        <Home size={15} />
-        <span className={cn("text-sm", !open && !isMobile && "hidden")}>
+        <Home className="text-blue-500" size={15} />
+        <span
+          className={cn(
+            "text-sm text-blue-500",
+            !open && !isMobile && "hidden"
+          )}
+        >
           Home
         </span>
       </NavLink>
@@ -44,7 +49,7 @@ export function NavMain({
             className={({ isActive }) =>
               cn(
                 "flex items-center space-x-2 hover:bg-slate-200/50  p-2 rounded-lg text-foreground",
-                isActive && "bg-slate-200/50  text-active"
+                isActive && "bg-slate-200/50  text-active text-blue-500"
               )
             }
           >

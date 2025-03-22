@@ -17,7 +17,7 @@ export function PMCNameCard() {
           asChild
         >
           <NavLink to={"/dashboard"}>
-            <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-black/80 text-sidebar-primary-foreground">
+            <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-blue-500 text-sidebar-primary-foreground">
               <ArrowUpWideNarrow />
             </div>
             <div className="grid flex-1 text-left leading-tight">
@@ -26,9 +26,9 @@ export function PMCNameCard() {
                   to={"/dashboard"}
                   className="text-xl font-bold flex items-center"
                 >
-                  NextGen
+                  PM
                   <span className="text-[#f5923e] relative">
-                    U
+                    S
                     <span className="absolute top-1 right-0 w-1.5 h-1.5 bg-[#f5923e] rounded-full"></span>
                   </span>
                 </NavLink>

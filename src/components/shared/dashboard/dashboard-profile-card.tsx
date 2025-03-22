@@ -18,7 +18,7 @@ const DashboardProfileCard = () => {
             asChild
           >
             <NavLink to={"/dashboard/profile"}>
-              <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-black/80 text-sidebar-primary-foreground">
+              <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-blue-500 text-sidebar-primary-foreground">
                 <UserRoundCog className="size-4" />
               </div>
               <div className="grid flex-1 text-left text-sm leading-tight">
